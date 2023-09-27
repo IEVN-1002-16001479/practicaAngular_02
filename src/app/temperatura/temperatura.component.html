@@ -1,0 +1,24 @@
+
+<div class="row">
+    <div class="col-6">
+        <div class="mb-3">
+            <label class="form-label" for="">GRADOS A CONVERTIR</label>
+            <input type="text" class="form-control" [(ngModel)]="num1" name="num1" placeholder="">
+        </div>
+        
+        <div class="mb-3">
+            <input type="radio" id="f" [(ngModel)]="operacion" name="operacion" value="f" />
+            <label for="f">FARENHEIT A CELCIUS</label> <br>
+            <input type="radio" id="c" [(ngModel)]="operacion" name="operacion" value="c" />
+            <label for="c">CELCIUS A FARENHEIT </label> <br>
+        </div>
+    
+        <br>
+        <div class="mb-3">
+            <button (click)="calcular() " class="btn btn-primary">Calcular</button></div>
+</div>
+        <div class="col-6">
+            <h2>Resultado es: {{resultado}}</h2>
+             </div>
+    
+</div>
