@@ -1,0 +1,15 @@
+<div class="container">
+    <mat-form-field>
+     <input matInput [(ngModel)]="num1" type="number" placeholder="NUMERO 1" >
+    </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="num2" type="number" placeholder="NUMERO 2" >
+    </mat-form-field>
+  <button mat-raised-button color="primary" (click)="calcular()">SUMAR</button><br>
+  
+  <div *ngIf="resultadoConcatenacion !== ''">
+    <p>NUMERO 1:  {{ num1 }}</p><br>
+    <p>NUMERO 2: {{ num2}}</p><br>
+    <p>{{ resultadoConcatenacion }} = {{ resultadoSuma }} </p>
+    
+  </div>

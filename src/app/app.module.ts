@@ -1,18 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppComponent } from './app.component';
 import { TemperaturaComponent } from './temperatura/temperatura.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MultiplicacionComponent } from './multiplicacion/multiplicacion.component';
+import { MaterialModule } from './material/material/material.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TemperaturaComponent
+    TemperaturaComponent,
+    MultiplicacionComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
