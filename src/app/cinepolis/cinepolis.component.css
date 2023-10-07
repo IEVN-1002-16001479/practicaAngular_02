@@ -1,0 +1,87 @@
+
+
+body{
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(cinemex.jpg);
+    color: white;
+}
+
+div#container2{
+    margin: auto;
+    float: right;
+    width: 350px;
+    height: 400px;
+    background-color: transparent;
+    border-style:solid;
+    margin-right: 300px;
+    margin-top: 30px;
+    background-color: bisque;
+    
+   padding-left: 25px;
+   color: black;
+}
+
+
+h1#subtitulo{
+    float: left;
+    margin-left: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+h3#subtitulo2{
+    float: left;
+    margin-left: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+div#container1{
+   margin: auto;
+   margin-top:25px;
+   width: 620px;
+   height: 480px;
+   background-color: transparent;
+   float: left;
+   margin-left: 30px;
+   border-style: solid;
+   background-color: bisque;
+   color: black;
+   padding-left: 25px;
+   
+}
+
+div label {
+    width: 25%;
+    float: left;
+  }
+   button {
+    width: 20%;
+    float: left;
+    margin-left: 40%;
+   }
+
+   h1#error{
+    color: red;
+   }
+   .my-button {
+    padding: 10px 20px;
+    background-color: #1bd80d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .my-button:hover {
+    background-color: #45a049;
+  }
+  
+  .my-button:active {
+    background-color: #3e8e41;
+  }
+
+  
+  

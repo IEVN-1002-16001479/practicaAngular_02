@@ -1,0 +1,57 @@
+
+<body>
+    <div id="encabezado">
+      
+    </div>
+
+    <div id="container1">
+      <br>
+      <h1 id="subtitulo">Compra de Boletas de Cine</h1><br><br>
+        <form  (ngSubmit)="entradas()"><br>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" [(ngModel)]="nombre" name="nombre" required><br><br>
+          
+            <label for="totalCabezas">TOTAL DE PERSONAS:</label><br>
+            <input type="number" id="totalCabezas" [(ngModel)]="totalCabezas" name="totalCabezas"  required><br><br>
+          
+            <label for="totalBoletas">Número de Boletas (MAX. 7 POR PERSONA):</label><br>
+            <input type="number" id="totalBoletas" [(ngModel)]="totalBoletas" name="totalBoletas" [max]="totalCabezas * 7" required><br><br>
+          <br>
+          
+            <label>¿Tiene tarjeta "Cineco"? </label>
+
+
+            
+            
+            <input type="radio" [(ngModel)]="tieneTarjeta" name="tieneTarjeta" value="si">  SI
+            <input type="radio" [(ngModel)]="tieneTarjeta" name="tieneTarjeta" value="no">  No
+            <br><br>
+          
+          
+            <button class="my-button" type="submit">PAGAR</button><br><br>
+            
+            <button class="my-button" (click)="salir()">SALIR</button>
+
+
+            
+          
+          </form>
+        </div>
+        <br>
+        <div id="container2"   >
+          <br>
+          <h3 id="subtitulo2">TICKET</h3><br><br>
+          <p>Nombre: {{ mostrarNombre }}</p>
+          <p>Total de Boletas: {{ mostrarBoleto }}</p>
+          <p>Descuento Aplicado por Boletos {{ descuento }}%</p>
+          <p>Descuento Aplicado por Tarjeta: {{ descuentoTarjeta }}%</p>
+          <p>Total a Pagar: ${{ precioTotalF2 }}</p>
+          <h1 id="error"> {{mensaje}}</h1>
+        </div>
+        
+     
+</body>
+
+
+
+
